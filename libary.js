@@ -13,12 +13,28 @@ function getTextFieldValueById(id){
     return textNumber;
 }
 
-// show blog and from
-function donationHistory(id){
-    document.getElementById('historyMainPage').classList.add('hidden');
-    document.getElementById('donationMainPage').classList.add('hidden');
-    console.log('hi')
 
-    document.getElementById('id').classList.remove('hidden');
-    console.log('hi');
+
+
+// show donation and history  
+
+function donationHistory(id){
+    const history = document.getElementById('historyMainPage');
+    const donation = document.getElementById('donationMainPage');
+   
+    history.classList.add('block');
+    history.classList.remove('hidden');
+    donation.classList.add('hidden')
+
+}
+// donation
+function suportrthistory(id){
+    const history = document.getElementById('historyMainPage');
+    const donation = document.getElementById('donationMainPage');
+   
+    history.classList.remove('block');
+    history.classList.add('hidden');
+    donation.classList.add('block')
+    donation.classList.remove('hidden')
+   
 }
