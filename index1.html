@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css1.css">
+  <script src="https://kit.fontawesome.com/ec10fd28bb.js" crossorigin="anonymous"></script>
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- daisy -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="blog">
+  <main class="text-black bg-white">
+    <nav class="flex justify-evenly bg-orange-100 p-3">
+
+      <button id="home-1" class="btn btn-success bg-lime-500">Home</button>
+      <div class="flex justify-evenly font-bold gap-2">
+        <img src="./assets/logo.png" alt="" class="h-7">
+        <div>Donate Bangladesh</div>
+      </div>
+      <div class="flex justify-evenly gap-2">
+        <img src="./assets/coin.png" alt="">
+        <div>5500 BDT</div>
+      </div>
+    </nav>
+  <!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
+<h1>Frequently Asked Questions</h1>
+
+<div class="faqs-container">
+  <div class="faq active">
+    <h3 class="faq-title">
+      How do you manipulate DOM elements using JavaScript?
+    </h3>
+    <p class="faq-text">
+      Use methods like getElementById() or querySelector() to access elements.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="faq">
+    <h3 class="faq-title">
+      What does DOM stand for in web development?
+    </h3>
+    <p class="faq-text">
+      DOM stands for Document Object Model, representing webpage structure.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="faq">
+    <h3 class="faq-title">
+      What is the purpose of an API in web applications?
+    </h3>
+    <p class="faq-text">
+      APIs allow communication between different software components or services.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="faq">
+    <h3 class="faq-title">
+      How do you fetch data from an API using JavaScript?
+    </h3>
+    <p class="faq-text">
+      Use the fetch() function to send HTTP requests and handle responses.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="faq">
+    <h3 class="faq-title">
+      Can the DOM be dynamically updated without reloading the page?
+    </h3>
+    <p class="faq-text">
+      Yes, JavaScript can dynamically update the DOM without page reloads.
+    </p>
+    <button class="faq-toggle">
+      <i class="fas fa-chevron-down"></i>
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+
+  
+<script src="./fundamental.js"></script>
+<script src="./libary.js"></script>
+<script src="./index.js"></script>
+</main>
+</body>
+</html>
