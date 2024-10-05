@@ -25,7 +25,7 @@ document.getElementById('addMoneyAmount3')
     // transcation history data
  
     const write = document.createElement('div');
-    write.classList.add('bg-gray-300');
+    write.classList.add('bg-gray-300','mt-2');
     write.innerHTML = `
     <p>${addMoney3} Taka is Donated for Aid for Injured in the Quota Movement</p>
     `
@@ -35,5 +35,5 @@ document.getElementById('addMoneyAmount3')
     date.classList.add('bg-gray-300');
     date.innerHTML = "Date : " + Date()
     document.getElementById('historyMainPage').appendChild(date)
-
+    my_modal_5.showModal()
 })

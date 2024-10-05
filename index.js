@@ -24,7 +24,7 @@ if(isNaN(addMoney1)){
     alert('Failed to add money');
     return 0;
 }
-else {
+ else {
     if((addMoney1) <= 0){
         alert('Failed to add money');
         return;
@@ -40,7 +40,7 @@ else {
         // transcation history data
      
         const write = document.createElement('div');
-        write.classList.add('bg-green-300');
+        write.classList.add('bg-green-300','mt-2');
         write.innerHTML = `
         <p>${addMoney1} Taka is Donated for Donate for Flood at Nowakhaili,Bangladesh</p>
         `
@@ -50,6 +50,7 @@ else {
         date.classList.add('bg-green-300');
         date.innerHTML = "Date : " + Date()
         document.getElementById('historyMainPage').appendChild(date)
+        my_modal_5.showModal()
     }
 }
 
