@@ -11,6 +11,10 @@ document.getElementById('addMoneyAmount3')
         alert('Failed to add money');
         return;
     }
+    if((addMoney3) <= 0){
+        alert('Failed to add money');
+        return;
+    }
     const newBalance3 = balance3 + addMoney3;
     const newAmarBalance1 = amarBalance - addMoney3;
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 
 <head>
   <meta charset="UTF-8">
@@ -23,6 +23,7 @@
   <!-- daisy -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <style>
+
     @media screen and (max-width: 576px) and (min-width: 100px) {
       .base {
         display: none;
@@ -55,13 +56,13 @@
     </nav>
     <!-- button in main page -->
     <div class="button-main flex justify-center gap-3 mt-4">
-      <button id="donationbtn" class="btn btn-success bg-lime-500">Donation</button>
-      <button id="historybtn" class="btn btn-success bg-lime-500">History</button>
+      <button id="donationbtn" class="btn colorBtn">Donation</button>
+      <button id="historybtn" class="btn colorBtn ">History</button>
     </div>
   </div>
   <div class=" bg-white">
     <div id="historyMainPage" class="hidden ">
-    <h1 class="flex justify-center bg-white">Donate Amount</h1>
+    <h1 id="" class="flex justify-center bg-white">Donate Amount</h1>
     </div>
   </div>
   <main id="donationMainPage">

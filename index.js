@@ -22,28 +22,38 @@ document.getElementById('addMoneyAmount1')
 
 if(isNaN(addMoney1)){
     alert('Failed to add money');
-    return;
+    return 0;
+}
+else {
+    if((addMoney1) <= 0){
+        alert('Failed to add money');
+        return;
+    }
+    else{
+
+        const newBalance1 = balance1 + addMoney1;
+        const newAmarBalance1 = amarBalance - addMoney1;
+    
+        document.getElementById('account-balance1').innerText = newBalance1;
+        document.getElementById('myBalance').innerText = newAmarBalance1;
+    
+        // transcation history data
+     
+        const write = document.createElement('div');
+        write.classList.add('bg-green-300');
+        write.innerHTML = `
+        <p>${addMoney1} Taka is Donated for Donate for Flood at Nowakhaili,Bangladesh</p>
+        `
+        document.getElementById('historyMainPage').appendChild(write)
+    
+        const date = document.createElement('div');
+        date.classList.add('bg-green-300');
+        date.innerHTML = "Date : " + Date()
+        document.getElementById('historyMainPage').appendChild(date)
+    }
 }
 
-    const newBalance1 = balance1 + addMoney1;
-    const newAmarBalance1 = amarBalance - addMoney1;
-
-    document.getElementById('account-balance1').innerText = newBalance1;
-    document.getElementById('myBalance').innerText = newAmarBalance1;
-
-    // transcation history data
- 
-    const write = document.createElement('div');
-    write.classList.add('bg-green-300');
-    write.innerHTML = `
-    <p>${addMoney1} Taka is Donated for Donate for Flood at Nowakhaili,Bangladesh</p>
-    `
-    document.getElementById('historyMainPage').appendChild(write)
-
-    const date = document.createElement('div');
-    date.classList.add('bg-green-300');
-    date.innerHTML = "Date : " + Date()
-    document.getElementById('historyMainPage').appendChild(date)
+   
 
 })
 
